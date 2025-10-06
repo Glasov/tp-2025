@@ -21,7 +21,9 @@ https://drive.google.com/drive/folders/1o8uZxKcpuiV1TJGUiUB8D7OcZ4qWkhwn?usp=sha
 
 ## Оценки
 
-Оценки будем проставлять по системе БРС.
+Оценки будем проставлять по системе БРС, баллы можно будет увидеть в таблице:
+
+https://docs.google.com/spreadsheets/d/1jqaweV_pZGw6DhkLA3trJ874lc4ZX6SbXaJ6oURUNxE/edit?gid=0#gid=0
 
 Для оценки "удовлетворительно" необходимо набрать 51 балл.
 
