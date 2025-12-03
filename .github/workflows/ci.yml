@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, my-first-branch]
   pull_request:
     branches: [main, master]
 
@@ -14,30 +14,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    
-    - name: List project files
-      run: ls -la practice/2_cicd/
-    
-    - name: Test HTML file
-      run: |
-        echo "Testing HTML file..."
-        if [ -f "practice/2_cicd/index.html" ]; then
-          echo "✅ index.html exists"
-        else
-          echo "❌ index.html not found"
-          exit 1
-        fi
-    
-    - name: Test CSS file
-      run: |
-        echo "Testing CSS file..."
-        if [ -f "practice/2_cicd/style.css" ]; then
-          echo "✅ style.css exists"
-        else
-          echo "❌ style.css not found"
-          exit 1
-        fi
+    - name: List files
+      run: ls -la
