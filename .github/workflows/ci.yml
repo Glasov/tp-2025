@@ -1,0 +1,18 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, master, my-first-branch]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: List files
+      run: ls -la
